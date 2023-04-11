@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,500&display=swap');
+
+body {
+    background-color: #222;
+    color: #fff;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    line-height: 1.5em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-weight: 300;
+}
+
+.Card {
+    border-radius: 10px;
+    overflow: hidden;
+    border: 3px solid;
+    width: 25%;
+    margin: 12px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 250px;
+}
+    
+
+.Card .titulo {
+    padding: 5px 0px;
+   
+}
+
+.Card .conteudo {
+    background-color: #fff;
+    color: black;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.principal{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
