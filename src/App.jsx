@@ -4,12 +4,16 @@ import CompParametro from './Basicos/CompParametro'
 import Sorteio from './Basicos/Sorteio'
 import Card from './componentes/Layout/card'
 import Sorteio2 from './Basicos/Sorteio2'
+import Familia from './Basicos/Familia'
 
 export default _ =>
     <div className='fg'>
-        <h1>Fundamentos React</h1>
+        <h1>Fundamentos React :) </h1>
         <div className='principal'>
-        <Card titulo="Desafio Aleatório2" color="#FF5703">
+        <Card titulo="Componente com Filho" color="#FA8072">
+                <Familia sobrenome="Cangussu"/>
+            </Card>
+        <Card titulo="Desafio Aleatório2" color="#32CD32">
                 <Sorteio2 max={10} min={1}/>
             </Card>
             <Card titulo="Desafio Aleatório" color="#FF5733">
