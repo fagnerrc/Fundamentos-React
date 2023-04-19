@@ -1,12 +1,13 @@
-import React from "react";
-import Membro from "./Membro"
-export default _=> {
-return(
-    <div>
-        <h1>Membros da Familia</h1>
-    <Membro nome="Fagner" sobrenome={_.sobrenome}/>
-    <Membro nome="Vagner"  sobrenome={_.sobrenome}/>
-    <Membro nome="Wagner"  sobrenome={_.sobrenome}/> 
-    </div>
-)
+import React, { cloneElement } from "react";
+export default _ => {
+    return (
+        <div>
+            <h1>Membros da Familwia</h1>
+            {
+                React.Children.map(_.children, filho => {
+                    return cloneElement(filho, _)
+                })
+            }
+        </div>
+    )
 }
