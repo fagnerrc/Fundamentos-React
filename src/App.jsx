@@ -5,18 +5,18 @@ import Sorteio from './Basicos/Sorteio'
 import Card from './componentes/Layout/card'
 import Sorteio2 from './Basicos/Sorteio2'
 import Familia from './Basicos/Familia'
-import Membro from "./Basicos/Membro"
+import ListaAlunos from './Repeticao/ListaAlunos'
 
 export default _ =>
     <div className='fg'>
         <h1>Fundamentos React :) </h1>
         <div className='principal'>
+
+            <Card titulo="Lista Alunos" color="#B8860B">
+                <ListaAlunos></ListaAlunos>
+            </Card>
             <Card titulo="Componente com Filho" color="#FA8072">
-                <Familia sobrenome="Cangussu">
-                    <Membro nome="Fagner" />
-                    <Membro nome="Vagner" />
-                    <Membro nome="Wagner" />
-                </Familia>
+                <Familia sobrenome="Cangussu   " />
             </Card>
             <Card titulo="Desafio Aleatório2" color="#32CD32">
                 <Sorteio2 max={10} min={1} />
@@ -34,6 +34,3 @@ export default _ =>
             </Card>
         </div>
     </div>
-
-
-
