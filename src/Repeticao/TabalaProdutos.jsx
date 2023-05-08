@@ -2,19 +2,22 @@ import produtos from "../data/produtos"
 export default _ => {
     const tabela = produtos.map((produtos) => {
         return (
-        
-                <tr key={produtos.id}>
-                    <div className={produtos.id}> Numero: {produtos.id} Nome: {produtos.nome} Preço: {produtos.preco}</div>
-                </tr>
-            
+
+            <tr key={produtos.id}>
+                <td>{produtos.id}</td> <td>{produtos.nome}</td> <td>{produtos.preco}</td>
+            </tr>
+
 
         )
     })
     return (
-        <div>
+        <table>
             <tr>
-                <td>{tabela}</td>
+                <th>Numero: </th> <th>Nome: </th> <th>Preço: </th>
             </tr>
-        </div>
+            <tbody>
+                {tabela}
+            </tbody>
+        </table>
     )
 }

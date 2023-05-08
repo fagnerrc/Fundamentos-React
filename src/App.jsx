@@ -8,11 +8,16 @@ import Familia from './Basicos/Familia'
 import ListaAlunos from './Repeticao/ListaAlunos'
 import Membro from './Basicos/Membro'
 import TabalaProdutos from './Repeticao/TabalaProdutos'
+import ParOuImpar from './Condicional/ParOuImpar'
 
 export default _ =>
     <div className='fg'>
         <h1>Fundamentos React :) </h1>
         <div className='principal'>
+        <Card titulo="Par ou Impar" color="#00FFFF">
+                <ParOuImpar numero={5}> </ParOuImpar>
+            </Card>
+
         <Card titulo="Tabela Produtos" color="#00FF7F">
                 <TabalaProdutos></TabalaProdutos>
             </Card>
