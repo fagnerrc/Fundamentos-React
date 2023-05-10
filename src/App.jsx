@@ -9,13 +9,20 @@ import ListaAlunos from './Repeticao/ListaAlunos'
 import Membro from './Basicos/Membro'
 import TabalaProdutos from './Repeticao/TabalaProdutos'
 import ParOuImpar from './Condicional/ParOuImpar'
+import UsuarioInfo from './Condicional/UsuarioInfo'
+import ComunicPai from './Condicional/ComunicPai'
 
 export default _ =>
     <div className='fg'>
         <h1>Fundamentos React :) </h1>
         <div className='principal'>
+        <Card titulo="Comunicação" color="#8B4513">
+<ComunicPai></ComunicPai>
+            </Card>
         <Card titulo="Par ou Impar" color="#00FFFF">
-                <ParOuImpar numero={5}> </ParOuImpar>
+                <ParOuImpar numero={545}> </ParOuImpar>
+                <UsuarioInfo usuario={{nome:"Fagner"}}/>
+                <UsuarioInfo usuario={{email:"Fagner"}}/>
             </Card>
 
         <Card titulo="Tabela Produtos" color="#00FF7F">
