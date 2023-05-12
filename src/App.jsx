@@ -11,21 +11,25 @@ import TabalaProdutos from './Repeticao/TabalaProdutos'
 import ParOuImpar from './Condicional/ParOuImpar'
 import UsuarioInfo from './Condicional/UsuarioInfo'
 import ComunicPai from './Condicional/ComunicPai'
+import IndiretaPai from './Condicional/IndiretaPai'
 
 export default _ =>
     <div className='fg'>
         <h1>Fundamentos React :) </h1>
         <div className='principal'>
-        <Card titulo="Comunicação" color="#8B4513">
-<ComunicPai></ComunicPai>
+            <Card titulo="Comunicação Indireta" color="#00CED1">
+                <IndiretaPai></IndiretaPai>
             </Card>
-        <Card titulo="Par ou Impar" color="#00FFFF">
+            <Card titulo="Comunicação" color="#8B4513">
+                <ComunicPai></ComunicPai>
+            </Card>
+            <Card titulo="Par ou Impar" color="#00FFFF">
                 <ParOuImpar numero={545}> </ParOuImpar>
-                <UsuarioInfo usuario={{nome:"Fagner"}}/>
-                <UsuarioInfo usuario={{email:"Fagner"}}/>
+                <UsuarioInfo usuario={{ nome: "Fagner" }} />
+                <UsuarioInfo usuario={{ email: "Fagner" }} />
             </Card>
 
-        <Card titulo="Tabela Produtos" color="#00FF7F">
+            <Card titulo="Tabela Produtos" color="#00FF7F">
                 <TabalaProdutos></TabalaProdutos>
             </Card>
             <Card titulo="Lista Alunos" color="#B8860B">
@@ -38,7 +42,7 @@ export default _ =>
                     <Membro nome="Katarina"></Membro>
                     <Membro nome="Wilma"></Membro>
                 </Familia>
-                
+
             </Card>
             <Card titulo="Desafio Aleatório2" color="#32CD32">
                 <Sorteio2 max={10} min={1} />
